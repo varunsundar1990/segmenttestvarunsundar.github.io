@@ -374,12 +374,14 @@ $(document).ready(function() { "use strict";
         n = window.stages;
       } else {
         n = window.stage + 1;
+         console.log("Increased");
       }
     } else if (n === "decrease"){
       if ((window.stage - 1) < 1){
         n = 1;
       } else {
         n = window.stage - 1;
+         console.log("Decreased");
       }
     }
     
